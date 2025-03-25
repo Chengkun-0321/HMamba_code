@@ -1,0 +1,17 @@
+python HMambaTest.py \
+  --test_x_path "./training_data/PETBottle/cnn-2d_2020-09-09_11-45-24_x.npy" \
+  --test_y_path "./training_data/PETBottle/cnn-2d_2020-09-09_11-45-24_y.npy" \
+  --checkpoint_path "./weights.10.hdf5" \
+  --mean 65.0 \
+  --boundary_upper 70.0 \
+  --boundary_lower 60.0
+
+python HMambaTrain1.py \
+--train_x "./training_data/PETBottle/cnn-2d_2020-09-09_11-45-24_x.npy" \
+--train_y "./training_data/PETBottle/cnn-2d_2020-09-09_11-45-24_y.npy" \
+--valid_x "./validation_data/PETBottle/cnn-2d_2020-09-09_11-45-24_x.npy" \
+--valid_y "./validation_data/PETBottle/cnn-2d_2020-09-09_11-45-24_y.npy" \
+--epochs 500 \
+--batch_size 129 \
+--lr 0.0001 \
+--validation_freq 1

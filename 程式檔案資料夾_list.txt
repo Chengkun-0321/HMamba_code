@@ -1,0 +1,23 @@
+dir：程式檔案資料夾
+│  test.py：「測試模型」的主程式
+│  train.py：「訓練模型」的主程式
+│─model 所有模型架構
+├─checkpoints：儲存「模型訓練」的權重檔案
+├─result_data：儲存模型的混淆矩陣、邊界檢測之陣列
+├─result_heatmaps：儲存模型的特徵熱圖
+│─metrology_data：存放「量測資料（Y）」的資料夾
+   │ PETBottle:寶特瓶「量測資料（Y）」
+   │ TFT: TFT「量測資料（Y）」
+│─process_data：存放「製程資料（X）」的資料夾
+   │ PETBottle:寶特瓶「製程資料（X）」
+   │ TFT: TFT「製程資料（X）」
+│─testing_data：存放「測試資料集」的資料夾
+   │ PETBottle:寶特瓶「測試資料」
+   │ TFT: TFT「測試資料」
+│─training_data：存放「訓練資料集」的資料夾
+   │ PETBottle:寶特瓶「訓練資料」
+   │ TFT: TFT「訓練資料」
+│─validation_data：存放「驗證資料集」的資料夾
+   │ PETBottle:寶特瓶「驗證資料」
+   │ TFT: TFT「驗證資料」
+

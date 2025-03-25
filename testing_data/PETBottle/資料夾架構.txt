@@ -1,0 +1,7 @@
+PETBottledir：程式檔案資料夾
+│  4869-take-normally-metrology-order-with1col-centerofmass.csv：量測資料.csv檔(在metrology_data可以找到)
+│  4869-take-normally-process-order-with1col.csv：原始資料.csv檔(在process_data可以找到)
+│  cnn-2d_2020-09-09_11-45-24_x.npy：經過split_traindata切割過後的製程資料x
+│  cnn-2d_2020-09-09_11-45-24_y.npy：經過split_traindata切割過後的量測資料y
+│  split_traindata.py：用來切割原始資料/量測資料做成Train、Valid、TestData
+│  執行指令：用來執行split_traindata.py指令
